@@ -34,3 +34,22 @@ gradle build
 ```sh
 gradle bootRun
 ```
+
+Use the below query and mutations.
+
+```
+query {
+  sales(startDateTime: "2022-09-01T02:00:00Z", endDateTime: "2022-09-08T09:58:00Z") {
+    points
+    datetime
+    sales
+  }
+}
+
+mutation {
+  newSale(price: "1000.00", price_modifier: 0.98, payment_method: VISA, datetime: "2022-09-01T09:00:00Z") {
+    final_price
+    points
+  }
+}
+```
