@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changes/create_sale.sql
+  - include:
+      file: db/changelog/changes/insert_sales.sql

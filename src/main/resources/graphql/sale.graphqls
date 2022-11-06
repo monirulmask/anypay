@@ -1,0 +1,32 @@
+schema {
+    query: SaleQuery
+    mutation: SaleMutation
+}
+
+type SaleSummary {
+    sales: String!
+	datetime: String!
+	points: Int
+}
+
+type SaleQuery {
+    sales(startDateTime: String!, endDateTime: String!): [SaleSummary]
+}
+
+enum PaymentMethod {
+  VISA
+  JCB
+  CASH
+  CASH_ON_DELIVERY
+  AMEX
+  MASTERCARD
+}
+
+type FinalSale {
+	final_price: String!
+	points: Int
+}
+
+type SaleMutation {
+    newSale(price: String!, price_modifier: Float!, payment_method: PaymentMethod!, datetime: String!) : FinalSale!
+}

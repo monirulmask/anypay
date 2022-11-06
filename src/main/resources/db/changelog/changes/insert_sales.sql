@@ -1,0 +1,3 @@
+INSERT INTO kotlin_demo.sale(price, price_modifier, payment_method, datetime, final_price, points)VALUES (1111, 0.98, 'VISA', '2022-09-01 12:25:00', 1088.79, 33);
+INSERT INTO kotlin_demo.sale(price, price_modifier, payment_method, datetime, final_price, points)VALUES (1111, 0.98, 'VISA', '2022-09-01 13:25:00', 1088.79, 33);
+INSERT INTO kotlin_demo.sale(price, price_modifier, payment_method, datetime, final_price, points)VALUES (1111, 0.98, 'VISA', '2022-09-01 13:55:00', 1088.79, 33);
