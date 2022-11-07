@@ -28,7 +28,7 @@ CREATE SCHEMA IF NOT EXISTS kotlin_demo;
 ## Run
 
 ```sh
-gradle build
+gradle build -x test
 ```
 
 ```sh
